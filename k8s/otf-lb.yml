@@ -1,0 +1,10 @@
+nd: Service
+apiVersion: v1
+metadata:
+  name: otf-asu-demo
+spec:
+  type: LoadBalancer
+  ports:
+    - port: 443
+  selector:
+    name: otf-asu-demo
